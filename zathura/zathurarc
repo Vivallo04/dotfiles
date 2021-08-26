@@ -1,0 +1,25 @@
+# open docos in fit-width mode by default
+set adjust-open "best-fit"
+
+set font "JetBrainsMono Nerd Font 1"
+
+set default-bg "#2A252D"
+set default-fg "#E2E1B1"
+set recolor true
+set recolor-darkcolor "#FFFFFF"
+set recolor-lightcolor "#2A252D"
+#set recolor-darkcolor           "#93a1a1" # base1
+set recolor-keephue             true      # keep original color
+set statusbar-h-padding 0
+set statusbar-v-padding 0
+set page-padding 1
+set guioptions none
+map u scroll half-up
+map d scroll half-down
+map D toggle_page_mode
+map r reload
+map R rotate
+map K zoom in
+map J zoom out
+map i recolor
+map p print
