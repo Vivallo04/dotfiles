@@ -1,0 +1,9 @@
+[package]
+name = "install_dotfiles"
+version = "0.1.0"
+edition = "2018"
+authors = ["Andres Vivallo <andresvivallo4@gmail.com>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
