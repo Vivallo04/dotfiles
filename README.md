@@ -2,5 +2,5 @@
 
 # Screenshots
 
-### DarkYellowTheme
+### Dark-Theme
 ![darkYellowTheme](https://github.com/Vivallo04/dotfiles/blob/master/docs/darkYellowTheme.png)
