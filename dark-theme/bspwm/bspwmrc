@@ -12,7 +12,7 @@ $HOME/.config/polybar/launch.sh
 bspc monitor -d I II III IV
 
 bspc config border_width         0
-bspc config window_gap         	 10
+bspc config window_gap         	 8
 bspc config border_radius        20.0
 
 bspc config split_ratio          1
@@ -42,8 +42,12 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 bspc rule -a discord state=floating center=true rectangle=1210x580+0+0
-bspc rule -a Thunar state=floating center=false
+bspc rule -a Thunar state=floating center=true
+bspc rule -a Slack state=floating center=true rectangle=952x732+0+0
 bspc rule -a MeChat state=floating center=true
+bspc rule -a Steam state=floating center=true
+bspc rule -a minecraft-launcher state=floating center=true
+
 
 bspc rule -a zoom state=floating
 bspc rule -a notion-app state=floating center=true

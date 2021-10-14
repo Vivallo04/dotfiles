@@ -1,80 +1,81 @@
 configuration {
-  modi: "window,drun,ssh,combi";
-  show-icons:         false;
-  drun-display-format: "{icon} {name}";
-  icon-theme:         "Papirus-Apps";
-  terminal:           "xfce4-terminal";
-  text-color:         "#000000";
-  display-drun: "  ";
-  width:              20;
-  height:             25;
-  cycle:              false;
-  font:               "JetBrainsMono Nerd Font 12.5";
-  hide-scrollbar:     true;
-  disable-history:    false;
-  color-window:       "#efc34b, #e95678, #8884ff";
-  color-active:       "#efc34b, #e95678, #8884ff";
-  color-urgent:       "#efc34b, #e95678, #8884ff";
-  padding:            20;
-  eh:                 1;
-  line-margin:        5;
+  modi: "window,drun";
+  font: "JetbrainsMono Nerd Font 12";
+  terminal: "xfce4-terminal";
+  disable-history: false;
+  sidebar-mode: true;
+  tokenize: true;
+  width: 20;
+  height: 25;
+  m: "-5";
+  display-drun: "Apps";
+  display-run: "Run";
+}
+
+@theme "/dev/null"
+
+element-text, element-icon {
+    background-color: inherit;
+    text-color:       inherit;
 }
 
 * {
-  bg: #352d39;
-  bg-alt: #efc34b;
-
-  fg: #FFFFFF;
-  fg-alt: #8884ff;
-
+  bg: #151515;
+  fg: #e8e8d3;
+  width: 500;
+  accent: #637363;
+  button: #667899;
   background-color: @bg;
-
-  border: 0;
-  margin: 0;
-  padding: 0;
-  spacing: 0;
-}
-
-element {
-  padding: 10;
-  orientation: horizontal;
-  text-color: @fg-alt;
-}
-
-element selected {
-  text-color: @fg;
-}
-
-entry {
-  background-color: @bg-alt;
-  padding: 12;
-  text-color: @fg;
-}
-
-inputbar {
-  children: [entry];
-}
-
-listview {
-  background-color: @bg;
-  columns: 1;
-  lines: 8;
-}
-
-mainbox {
-  background-color: @bg;
-  children: [inputbar, listview];
-}
-
-prompt {
-  background-color: @bg-alt;
-  enabled: true;
-  font: "FontAwesome 12";
-  padding: 12 0 0 12;
   text-color: @fg;
 }
 
 window {
-  transparency: "real";
+  padding: 20px;
+  border-radius: 7px;
 }
 
+prompt, entry {
+  text-color: @fg;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+listview {
+    columns: 1;
+    width: 10;
+    lines: 10;
+}
+
+entry {
+    margin: 0 0 10px 10px;
+}
+
+prompt {
+    background-color: @accent;
+    text-color: @bg;
+    margin: 0 0 10px 0;
+    padding: 10px 20px 10px 20px;
+}
+
+element {
+  border-radius: 7px;
+  padding: 10px 30px;
+}
+
+element.selected {
+  background-color: @fg;
+  text-color: @bg;
+}
+
+button {
+    border-radius: 7px;
+    padding: 10px;
+    margin: 10px 50px 0 50px;
+    horizontal-align: 0.5;
+}
+
+button selected {
+  background-color: #202020;
+  text-color: @fg;
+  padding: 10px;
+}

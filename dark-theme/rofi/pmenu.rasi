@@ -1,0 +1,85 @@
+configuration {
+    disable-history:                false;
+	sidebar-mode: 					false;
+}
+
+@theme "/dev/null"
+
+element-text, element-icon {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+* {
+    background-color:               #151515;
+    text-color:                     #e8e8d3;
+}
+
+window {
+    transparency:                   "real";
+    border-radius:                  7px;
+    width:                          80px;
+    location:                       east;
+    x-offset:                       -7px;
+    y-offset:                       0px;
+}
+
+listview {
+    lines:							5;
+    margin:                         5px;
+    spacing:                        5px;
+    cycle:                          false;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+mainbox {
+    background-color:               #151515;
+    children:                       [ listview ];
+}
+
+element {
+    background-color:               #1c1c1c;
+    text-color:                     #e8e8d3;
+    orientation:                    vertical;
+    border-radius:                  7px;
+}
+
+element-text {
+	font:							"feather 20";
+    expand:                         true;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    margin:                         17px 5px 17px 5px;
+}
+
+element normal.urgent,
+element alternate.urgent {
+    background-color:               #1c1c1c;
+    text-color:                     #151515;
+    border-radius:                  7px;
+}
+
+element normal.active,
+element alternate.active {
+    background-color:               #1c1c1c;
+    text-color:                     #151515;
+}
+
+element selected {
+    background-color:               #687363;
+    text-color:                     #151515;
+    border:                  		0px;
+    border-radius:                  7px;
+    border-color:                  	#202020;
+}
+
+element selected.urgent {
+    background-color:               #687363;
+    text-color:                     #e8e8d3;
+}
+
+element selected.active {
+    background-color:               #1c1c1c;
+    color:                          #151515;
+}
